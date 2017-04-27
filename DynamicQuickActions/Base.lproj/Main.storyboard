@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicQuickActions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-lK-wiy">
+                                <rect key="frame" x="114" y="617" width="146" height="30"/>
+                                <state key="normal" title="Register new acitions"/>
+                                <connections>
+                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qG1-HK-2vG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kittens.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rm6-jB-pmJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="WmF-J4-amR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaE-5T-Y6c">
+                                <rect key="frame" x="158.5" y="228" width="58.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwW-8E-fgB">
+                                <rect key="frame" x="16" y="284" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lsR-lK-wiy" secondAttribute="bottom" constant="20" id="4gZ-T1-OgF"/>
+                            <constraint firstItem="kwW-8E-fgB" firstAttribute="centerX" secondItem="jaE-5T-Y6c" secondAttribute="centerX" id="5sE-TF-PDh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kwW-8E-fgB" secondAttribute="trailing" id="6t6-9O-ydd"/>
+                            <constraint firstItem="rm6-jB-pmJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8rW-sd-3xK"/>
+                            <constraint firstAttribute="trailing" secondItem="rm6-jB-pmJ" secondAttribute="trailing" id="Bg8-Pk-T5G"/>
+                            <constraint firstItem="kwW-8E-fgB" firstAttribute="top" secondItem="jaE-5T-Y6c" secondAttribute="bottom" constant="27" id="YrT-bQ-75O"/>
+                            <constraint firstItem="rm6-jB-pmJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="cJK-0L-a0W"/>
+                            <constraint firstItem="jaE-5T-Y6c" firstAttribute="top" secondItem="rm6-jB-pmJ" secondAttribute="bottom" constant="8" id="gtc-oR-EBF"/>
+                            <constraint firstItem="kwW-8E-fgB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tKa-d4-cZW"/>
+                            <constraint firstItem="lsR-lK-wiy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIU-43-xYR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLabel" destination="kwW-8E-fgB" id="Bs7-0b-uKs"/>
+                        <outlet property="imageView" destination="rm6-jB-pmJ" id="JLh-k5-GhJ"/>
+                        <outlet property="nameLabel" destination="jaE-5T-Y6c" id="7gb-Gp-NCS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kittens.jpeg" width="640" height="457"/>
+    </resources>
+</document>

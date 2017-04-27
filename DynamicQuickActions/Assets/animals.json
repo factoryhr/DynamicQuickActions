@@ -1,0 +1,44 @@
+ [
+  {
+  "id": 43,
+  "name": "Puppy",
+  "description": "A cute little puppy.",
+  "image": "puppy"
+  },
+  {
+  "id": 62,
+  "name": "Duckling",
+  "description": "Curious little baby duck.",
+  "image": "duckling"
+  },
+  {
+  "id": 246,
+  "name": "Giraffe",
+  "description": "This is a tall one.",
+  "image": "giraffe"
+  },
+  {
+  "id": 35,
+  "name": "Kittens",
+  "description": "The sleepy kittens.",
+  "image": "kittens"
+  },
+  {
+  "id": 467,
+  "name": "Parrot",
+  "description": "A blue one.",
+  "image": "parrot"
+  },
+  {
+  "id": 13,
+  "name": "Tiger",
+  "description": "Mighty tiger.",
+  "image": "tiger"
+  },
+  {
+  "id": 76,
+  "name": "Hedgehog",
+  "description": "Spiky!",
+  "image": "hedgehog"
+  }
+  ]
